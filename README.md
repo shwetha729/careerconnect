@@ -1,2 +1,2 @@
 # careerconnect
-software engineering project on creating a professional services application for locals and not-local-to-area to engage in conferences &amp; more helpful services
+software engineering practice project on creating a professional services application for locals and not-local-to-area to engage in conferences &amp; more helpful services
