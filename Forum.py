@@ -6,7 +6,7 @@ fourm = mysql.connector.connect(
     db= "forum"
 ) #change to whatever the host of the mysql server is
 
-cursorObj = fourm.cursor()
+cursorObj = forum.cursor()
 
 users = """CREATE TABLE USER ( 
            user_id INT NOT NULL,
