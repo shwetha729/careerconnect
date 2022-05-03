@@ -1,6 +1,5 @@
 import mysql.connector
-from mysql.connectior import MySQLConnection, ERror
-from python_mysql_dbconfig import read_db_config
+from mysql.connectior import MySQLConnection, Error
 import create_time
 import datetime
 
@@ -14,10 +13,9 @@ def new_topic(topic_id, subj, body):
     args = (topic_id, subj, body, date)
 
     try:
-        db_config = read_db_config()
-        mydb = MySQLConnection(**db_config)
+        conn = mysql.connector.connect(user='root',password='password', host='127.0.0.1',database='mydb')
 
-        cursor = mydb.cursor()
+        cursor = conn.cursor()
         cursor.execute(query,args)
 
         if cursor.lastrowid:
@@ -25,12 +23,12 @@ def new_topic(topic_id, subj, body):
         else:
             print('topic not found')
 
-        mydb.commit()
+        conn.commit()
     except Error as error:
             print(error)
     finally:
         cursor.close()
-        mydb.close()
+        conn.close()
     def main():
         new_topic(1,"Help","Thread for help")
 
