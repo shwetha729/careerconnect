@@ -1,17 +1,18 @@
 CREATE TABLE `users` (
-  `user_id` int NOT NULL,
+  `user_id` int NOT NULL AUTO_INCREMENT,
   `username` varchar(16) NOT NULL,
   `email` varchar(255) NOT NULL,
   `firstname` varchar(32) NOT NULL,
   `lastname` varchar(32) NOT NULL,
   `password` varchar(32) NOT NULL,
+  `location` varchar(32) NOT NULL,
   `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `permission` int DEFAULT NULL,
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `proevents` (
-  `event_id` int NOT NULL,
+  `event_id` int NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
   `descript` text,
   `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
@@ -21,7 +22,7 @@ CREATE TABLE `proevents` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `attendants` (
-  `list_id` int NOT NULL,
+  `list_id` int NOT NULL AUTO_INCREMENT,
   `event_id` int NOT NULL,
   `user_id` int NOT NULL,
   `confirmation` varchar(45) DEFAULT NULL,
@@ -35,7 +36,7 @@ CREATE TABLE `attendants` (
 
 
 CREATE TABLE `topics` (
-  `topic_id` int NOT NULL,
+  `topic_id` int NOT NULL AUTO_INCREMENT,
   `subj` varchar(255) DEFAULT NULL,
   `body` text,
   `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
@@ -43,7 +44,7 @@ CREATE TABLE `topics` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `posts` (
-  `post_id` int NOT NULL,
+  `post_id` int NOT NULL AUTO_INCREMENT,
   `topic_id` int NOT NULL,
   `user_id` int NOT NULL,
   `title` text NOT NULL,
@@ -57,7 +58,7 @@ CREATE TABLE `posts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `replies` (
-  `reply_id` int NOT NULL,
+  `reply_id` int NOT NULL AUTO_INCREMENT,
   `post_id` int NOT NULL,
   `topic_id` int NOT NULL,
   `user_id` int NOT NULL,
@@ -70,4 +71,3 @@ CREATE TABLE `replies` (
   CONSTRAINT `post_id` FOREIGN KEY (`post_id`) REFERENCES `posts` (`post_id`),
   CONSTRAINT `posts_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
