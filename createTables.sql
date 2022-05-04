@@ -47,8 +47,8 @@ CREATE TABLE Posts(
     body TEXT NOT NULL,
     create_time DATETIME,
     PRIMARY KEY (post_id),
-    FOREIGN KEY user_id REFERENCES Users(user_id),
-    FOREIGN KEY topic_id REFERENCES Topics(topic_id)
+    FOREIGN KEY (user_id) REFERENCES Users(user_id),
+    FOREIGN KEY (topic_id) REFERENCES Topics(topic_id)
 );
 
 CREATE TABLE Replies(
@@ -60,6 +60,6 @@ CREATE TABLE Replies(
     body TEXT NOT NULL,
     create_time DATETIME,
     PRIMARY KEY (reply_id),
-    FOREIGN KEY user_id REFERENCES Users(user_id),
-    FOREIGN KEY post_id REFERENCES Posts(post_id)
+    FOREIGN KEY (user_id) REFERENCES Users(user_id),
+    FOREIGN KEY (post_id) REFERENCES Posts(post_id)
 );
