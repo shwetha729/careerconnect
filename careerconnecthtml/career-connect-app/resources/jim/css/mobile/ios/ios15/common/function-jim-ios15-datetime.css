@@ -1,0 +1,416 @@
+
+/* Main box */
+.devIOS .ui-widget-content {
+	border: none;
+	border-radius: 13px;
+	box-shadow: 2px 2px 100px 10px rgb(0 0 0 / 30%);
+	font-family: 'Helvetica Neue','iOS-Regular';
+}
+
+/* HEADER */
+
+.devIOS .ui-widget-header {
+	background: none;
+	border: none;
+	color: black;
+}
+
+.devIOS .ui-datepicker .ui-datepicker-header {
+	margin: 9px 9px 0px 9px;
+    padding: 0.2em 0px 8.4px 0px;
+}
+
+/* arrows */
+
+.devIOS .ui-datepicker .ui-datepicker-next,
+.devIOS .ui-datepicker .ui-datepicker-prev {
+	cursor: pointer;
+}
+
+.devIOS .ui-datepicker .ui-datepicker-next {
+	right: 0px;
+}
+
+.devIOS .ui-datepicker .ui-datepicker-prev span,
+.devIOS .ui-datepicker .ui-datepicker-next span,
+.devIOS .ui-datepicker .ui-datepicker-yearmonth {
+	background-image: none;
+	background-color: #007AFF;
+	overflow: visible;
+	margin-left: -5px;
+	margin-top: -10px;
+	clip-path: path("M3.0072392482204044 2.3043551398232758 C2.7513169307155216 2.3043551398232758 2.495394613210639 2.401986117453891 2.3001324195308293 2.5972483111337006 C1.9096081513804997 2.9877726984933197 1.9096081513804997 3.620937581153232 2.3001324195308293 4.011461730094272 L8.437229062978705 10.14855765828641 L2.2928930777949894 16.29289245137723 C1.9023688096446598 16.683418269248325 1.9023688096446598 17.316581721396762 2.2928930777949894 17.707107539267856 C2.488155271474799 17.902370448203403 2.744077588979682 17.999999995322543 2.9999999064845646 17.999999995322543 C3.2559222239894474 17.999999995322543 3.5118445414943302 17.902370448203403 3.70710673517414 17.707107539267856 L10.558548833791694 10.855664248557407 C10.746085073415717 10.668128008933383 10.851442243520697 10.413774485678989 10.851442243520697 10.14855765828641 C10.851442243520697 9.883340830893832 10.746085073415717 9.628987307639438 10.558548833791694 9.441451068015414 L3.7143460769099796 2.5972483111337006 C3.51908388323017 2.401986117453891 3.2631615657252873 2.3043551398232758 3.0072392482204044 2.3043551398232758 Z ");
+	height: 18px;
+}
+
+.devIOS .ui-datepicker .ui-datepicker-prev span {
+	transform: rotate(180deg);
+	margin-top: -8px;
+	margin-left: -7px;
+}
+
+.devIOS .ui-datepicker .ui-datepicker-prev {
+	right: 44px;
+	left: auto;
+}
+
+.devIOS .ui-state-hover, 
+.devIOS .ui-widget-content .ui-state-hover, 
+.devIOS .ui-widget-header .ui-state-hover, 
+.devIOS .ui-state-focus, 
+.devIOS .ui-widget-content .ui-state-focus, 
+.devIOS .ui-widget-header .ui-state-focus {
+	background-image: none;
+	background: none;
+	border: none;
+}
+
+.devIOS .ui-datepicker .ui-datepicker-prev-hover,
+.devIOS .ui-datepicker .ui-datepicker-next-hover {
+	top : 2px;
+}
+
+/* title size */
+.devIOS .ui-datepicker.ui-widget {
+	font-size: 17px;
+}
+
+.devIOS .ui-datepicker .ui-datepicker-title {
+	margin: 0px 0px 0px 5px;
+	text-align: left;
+	display: inline-block;
+}
+
+.devIOS .ui-datepicker .ui-datepicker-title.active > span {
+	color: #007AFF;
+}
+
+.devIOS .ui-datepicker .ui-datepicker-title span {
+	user-select: none;
+}
+
+.devIOS .ui-datepicker .ui-datepicker-yearmonth-parent {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+	cursor: pointer;
+	padding-bottom: 3px;
+}
+
+/**********/
+
+.devIOS .ui-datepicker th {
+	padding: 0px 0px 1.5px 0px;
+}
+
+.devIOS .ui-datepicker td {
+	padding: 1.5px 0px;
+	width: 41px;
+}
+
+/* Calendar main box size */
+.devIOS .ui-widget-content.ui-datepicker {
+	width: 307px;
+	padding: 0px;
+}
+
+/* Calendar number */
+.devIOS .ui-datepicker td span,
+.devIOS .ui-datepicker td a {
+    text-align: center;
+	padding: 8px 0px 8px 1px;
+}
+
+/* Calendar number default */
+.devIOS .ui-state-default,
+.devIOS .ui-widget-content .ui-state-default,
+.devIOS .ui-widget-header .ui-state-default {
+	background: none;
+	border: none;
+	color: black;
+}
+
+/* Current day */
+.devIOS .ui-state-highlight, 
+.devIOS .ui-widget-content .ui-state-highlight, 
+.devIOS .ui-widget-header .ui-state-highlight {
+	color: #007AFF;
+}
+
+/* Selected day */
+.devIOS .ui-state-active, 
+.devIOS .ui-widget-content .ui-state-active, 
+.devIOS .ui-widget-header .ui-state-active {
+	background-color: #D5E4F7;
+	color: #007AFF;
+	border-radius: 20px;
+}
+
+/* Current day and selected */
+.devIOS .ui-widget-content .ui-state-active.ui-state-highlight {
+	color: white;
+	background-color: #007AFF;
+}
+
+/* Calendar days */
+.devIOS .ui-datepicker th {
+	color: #BDBDBD;
+	font-size: 12px;
+}
+
+/* Calendar box */
+.devIOS .ui-datepicker table.ui-datepicker-calendar {
+	font-size: 20px;
+	width: 289px;
+	margin: 0px 9px 9px 9px;
+}
+
+/* Year selector */
+.devIOS .ui-datepicker .jp-ui-year-selector {
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 0px;
+    width: 289px;
+    height: 237.1px;
+    margin: 48px 9px 9px 9px;
+    background-color: white;
+}
+
+/* JIM custom buttons */
+
+.devIOS .ui-datepicker-separator {
+	margin: 4px 0px;
+	height: 1px;
+	width: 100%;
+	background-color: #AAAAAA;
+}
+
+.devIOS .ui-datepicker-bottom-buttons {
+	width: 289px;
+	margin: 11px 9px 15px 9px;
+	display: inline-block;
+}
+
+.devIOS .ui-datepicker-button {
+	font-size: 15px;
+	color: #007AFF;
+	position: relative;
+	cursor: pointer;
+	user-select: none;
+}
+
+.devIOS .ui-datepicker-button.ui-datepicker-done {
+	font-weight: bold;
+	float: right;
+	margin-right: 6px;
+	transform: translateY(2px);
+}
+
+.devIOS .ui-datepicker-button.ui-datepicker-reset {
+	margin: 0px 0px 0px 5px;
+}
+
+.devIOS .ui-datepicker .ui-datepicker-yearmonth {
+	width: 18px;
+	margin: 5px 0px 0px 4px;
+	position: absolute;
+	transform: scale(0.8);
+	cursor: pointer;
+}
+
+.devIOS .ui-datepicker .ui-datepicker-yearmonth.active {
+	transform: scale(0.8) rotate(90deg);
+    margin-top: 9px;
+}
+
+/************** TIME ************/
+
+.devIOS .ui-widget-content.ui-datepicker.ui-only-timepicker {
+	width: 215px;
+}
+
+.devIOS .ui-widget-content.ui-datepicker.ui-only-timepicker .ui-datepicker-bottom-buttons {
+	width: 195px;
+}
+
+.devIOS .ui-datepicker .ui-timepicker-div {
+	display: none;
+}
+
+.devIOS .ui-datepicker .ui-datepicker-buttonpane.ui-widget-content {
+	display: none;
+}
+
+.devIOS .ui-datepicker .jp-ui-timepicker {
+	width: 289px;
+	margin: 0px 9px 5px 9px;
+	display: inline-block;
+}
+
+.devIOS .jp-ui-timepicker-overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 98;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+
+.devIOS .jp-ui-datepicker-time-label, .jp-ui-datepicker-time {
+	font-size: 15px;
+	color: black;
+	position: relative;
+}
+
+.devIOS .jp-ui-datepicker-time-label {
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+.devIOS .jp-ui-datepicker-time {
+	border-radius: 5px;
+	background-color: #E1E2E3;
+	float: right;
+	margin-top: -6px;
+	margin-right: 6px;
+	padding: 6px 5px;
+	cursor: pointer;
+}
+
+.devIOS .ui-datepicker #jp-ui-scroll-timepicker { 
+	width: 289px;
+    height: 139px;
+    font-size: 21px;
+    overflow: hidden;
+    margin: 15px 0px;
+}
+
+.devIOS .ui-datepicker .jp-ui-floating-timepicker {
+	width: 214px;
+	height: 189px;
+	position: absolute;
+	display: none;
+	background-color: #F4F4F5;
+	border-radius: 20px;
+	top: 96px;
+	right: 15px;
+	z-index: 99;
+	filter: drop-shadow(0 0 20px #AAAAAA);
+	padding-top: 17px;
+}
+
+.devIOS .ui-datepicker #jp-ui-scroll-timepicker > div {
+    transform: translate(0px, -14px);
+}
+
+.devIOS .ui-datepicker #ti_controls { height:33px; width:100%; background-image: url('../../../../../images/mobile/ios/ios11/iphonex/portrait/date_topbar@2x.png'); background-repeat: repeat-x; }
+.devIOS .ui-datepicker .ti_mask { width: 375px; height: 217px; background-image: url('../../../../../images/mobile/ios/ios11/iphonex/portrait/dategradient@2x.png'); background-size: 100% 100%; overflow:hidden; position:absolute; top:33px; pointer-events:none; background-repeat:repeat-x; }
+.devIOS .ui-datepicker #ti_options { margin-left: 0px; margin-top:0px; vertical-align:top; overflow:hidden; height: 217px; }
+.devIOS .ui-datepicker #ti_options .ti_options { width: 355px; height: 217px; }
+.devIOS .ui-datepicker #ti_options_big { position:absolute; top: 69px; width: 185px; height: 30px; overflow:hidden; background-color:#e5e6e7; pointer-events:none; margin: 0px 15px; border-radius: 7px; padding-left: 10px; }
+.devIOS .ui-datepicker #ti_options_big .ti_options { position:relative; }
+
+.devIOS .ui-datepicker #ti_options > div {
+	height: 192px; 
+	top:-210px; 
+	float:left; 
+	text-align:right;
+}
+.devIOS .ui-datepicker #ti_options > div > div {
+	height: 28px; 
+	line-height: 28px; 
+	color: #888b8f; 
+	font-size:21px; 
+	font-family:'iOS-Light';
+}
+.devIOS .ui-datepicker #ti_options .ti_hours { width: 50px; padding-right: 34px; }
+.devIOS .ui-datepicker #ti_options .ti_minutes { width: 35px; padding-right: 18px; }
+.devIOS .ui-datepicker #ti_options .ti_periods { width: 88px; top:70px; text-align:center; }
+
+
+.devIOS .ui-datepicker #ti_options_big > div {
+	height: 192px; 
+	top:-280px; 
+	float:left; 
+	text-align:right;
+	position:relative;
+}
+.devIOS .ui-datepicker #ti_options_big > div > div {
+	height: 28px;
+	line-height: 28px;
+	color: #000000;
+	font-size: 21px;
+	font-family:'iOS-Light';
+	font-weight:700;
+}
+.devIOS .ui-datepicker #ti_options_big .ti_hours { padding-right: 46px; }
+.devIOS .ui-datepicker #ti_options_big .ti_minutes { padding-right: 46px; }
+.devIOS .ui-datepicker #ti_options_big .ti_periods { top:0px; text-align:center; }
+.devIOS .ui-datepicker #ti_options_big .ti_minutes .minutes { text-align:right; }
+
+.devIOS .ui-datepicker #ti_options .ti_periods.am { top: 70px; }
+.devIOS .ui-datepicker #ti_options .ti_periods.pm { top: 42px; }
+.devIOS .ui-datepicker #ti_options_big .ti_periods.am { top: 0px; }
+.devIOS .ui-datepicker #ti_options_big .ti_periods.pm { top: -28px; }
+
+/** Floating time conf **/
+
+.devIOS .jp-ui-floating-timepicker #ti_options_big {
+	width: 174px;
+	padding-right: 10px;
+	margin: 0px 10px;
+}
+
+.devIOS .ui-datepicker .jp-ui-floating-timepicker #ti_options .ti_hours { width: 44px; padding-right: 34px; }
+.devIOS .ui-datepicker #jp-ui-scroll-timepicker .ti_arrows { display: none; }
+
+/***********DATE*****************/
+
+.devIOS .ui-datepicker #jp-ui-scroll-datepicker { 
+	padding: 0px 5px; 
+	font-size: 21px;
+	font-family:'iOS-Light';
+	margin-top: 19px;
+}
+.devIOS .ui-datepicker .da_days { display: none; }
+
+.devIOS .ui-datepicker #da_options { vertical-align:top; overflow:hidden; height: 200px; }
+.devIOS .ui-datepicker #da_options .da_options { width: 100%; height: 217px; }
+.devIOS .ui-datepicker #da_options_big { position:absolute; top:103px; width: 278px; height: 30px; border-radius: 7px; overflow:hidden; background-color:#d0d5da; pointer-events:none; }
+.devIOS .ui-datepicker #da_options_big .da_options { position:relative; }
+
+.devIOS .ui-datepicker #da_options > div {
+	height: 192px; 
+	top: -197px;
+	float: left;
+}
+.devIOS .ui-datepicker #da_options > div > div {
+	height: 28px; 
+	line-height:28px; 
+	color: #888b8f;
+}
+.devIOS .ui-datepicker #da_options .da_months { width: 110px;  padding-right: 10px; padding-left:45px; float:left; }
+.devIOS .ui-datepicker #da_options .da_years { width: 88px; text-align:center; float:left; }
+
+.devIOS .ui-datepicker #da_options_big > div {
+	height: 192px; 
+	top:-280px;
+	float:left;
+	position:relative;
+}
+
+.devIOS .ui-datepicker #da_options_big > div > div {
+	height: 28px;
+	line-height: 28px;
+	color: #000000;
+	font-weight: 700;
+}
+.devIOS .ui-datepicker #da_options_big .da_months { width: 110px; padding-right: 10px; padding-left: 45px; }
+.devIOS .ui-datepicker #da_options_big .da_years { width: 88px; text-align:center; }
+
+/********************************/
+
+
+

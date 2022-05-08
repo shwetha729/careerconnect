@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>web_checkboxes_on_icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Producte" transform="translate(-380.000000, -528.000000)">
+            <g id="JUSTINMIN-JIM-V9" transform="translate(69.000000, 94.000000)">
+                <g id="GENERIC-Elements-UI" transform="translate(3.000000, 288.000000)">
+                    <g id="Radiobuttons+checkboxes-WEB" transform="translate(189.000000, 120.000000)">
+                        <rect id="Rectangle" stroke="#C4C4C4" stroke-width="2" fill="#FFFFFF" x="120" y="27" width="24" height="24"></rect>
+                        <path d="M140.563847,33.6402543 L130.110757,46.5511006 C129.529219,47.1496331 128.656913,47.1496331 128.075375,46.5511006 L123.436153,41.5346495 C122.854616,40.9361169 122.854616,40.0383181 123.436153,39.4397855 C124.017691,38.841253 124.889997,38.841253 125.471535,39.4397855 L129.238451,43.2591715 L137.894106,31.8533852 C138.475643,31.2548527 139.982309,30.6475915 140.563847,31.2461241 C141.145384,31.8446566 141.145384,33.0417218 140.563847,33.6402543 Z" id="checkbox_arrow" fill="#707070"></path>
+                        <g id="SLICES"></g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

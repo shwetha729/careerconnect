@@ -1,0 +1,70 @@
+/*** Scenarios ***/
+
+body.scenario #jim-web { display: block; }
+body.scenario #web-clip-left, body.scenario #web-clip-right { display: none; }
+.ui-scenario.ui-page-active {background-color: #D8D8D8;}
+#scenarioWrapper > div {position: absolute; display: table;}
+.transitionWrapper > svg {overflow: visible; display: block;}
+#simulation .ui-scenario.hideDevices .scenarioDevice {background-image: none;}
+
+/* Nodes */
+#scenarioWrapper .Page[value], #scenarioWrapper .OldPage {cursor: pointer;}
+#scenarioWrapper .Page[value]:hover, #scenarioWrapper .OldPage:hover {opacity: 0.5;}
+.commentsMode #scenarioWrapper .Page[value]:hover, .commentsMode #scenarioWrapper .OldPage:hover {opacity: 1;}
+#scenarioWrapper .OldPage {opacity: 0.01; background-color: #ffffff;}
+#scenarioWrapper .nodeImage, #scenarioWrapper .pageImage {width: 100.0%;}
+#scenarioWrapper .nodeName {margin: 4.0px auto 0.0px auto; text-align: center;}
+#scenarioWrapper .nodeImage div {width: 36.0px; height: 36.0px; margin: 0.0px auto 0.0px auto;}
+
+#scenarioWrapper .scenarioScreenThumbnail { 
+    margin: 0.0 auto 0.0 auto;
+    display: block;
+    position: relative;
+}
+#scenarioWrapper .scenarioDevice {margin: 0.0px auto 0.0 auto; background-repeat: no-repeat;}
+
+/* Note */
+#scenarioWrapper .Note .valignmiddle {vertical-align: middle;}
+#scenarioWrapper .Note .valigntop {vertical-align: top;}
+#scenarioWrapper .Note .valignbottom {vertical-align: bottom;}
+#scenarioWrapper .Note .haligncenter { text-align: center;}
+#scenarioWrapper .Note .halignleft { text-align: left;}
+#scenarioWrapper .Note .halignright { text-align: right;}
+#scenarioWrapper .Note .content > div {display: table-cell;}
+
+/* Image */
+#scenarioWrapper .Page > .scenarioScreenThumbnail {border: 1.0px solid #82888c; background-size: contain; background-position: center;}
+#scenarioWrapper div.scenarioScreenThumbnail {overflow: hidden; display: inline-block; background-repeat: no-repeat;}
+#scenarioWrapper .Image > svg { position: relative; }
+
+/* Default images*/
+#scenarioWrapper .Decision .nodeImage div { background: url("../../../resources/jim/images/scenarios/decision.png") no-repeat right;}
+#scenarioWrapper .Action .nodeImage div { background: url("../../../resources/jim/images/scenarios/action.png") no-repeat right;}
+#scenarioWrapper .Page .nodeImage div { background: url("../../../resources/jim/images/scenarios/screen.png") no-repeat right;}
+
+/* Transition */
+#scenarioWrapper > div.transitionWrapper {display: block;}
+#scenarioWrapper .scenarioEdge {position: absolute;}
+#scenarioWrapper .scenarioEdgeLine {position: absolute; height: 2.0px; background-color: #21C0C0;}
+#scenarioWrapper .transitionNameContainer {position: absolute; white-space: nowrap; padding: 4.0px; font-size: 0.0;}
+#scenarioWrapper .transitionNameContainer > * {display: inline-block; vertical-align: middle;}
+#scenarioWrapper .transitionWarning {
+    width: 18.0px;
+    height: 18.0px;
+    padding-right: 5.0px;
+    background: url("../../../resources/jim/images/scenarios/warning.png") no-repeat left;
+}
+
+/* Thumbnail */
+#scenarioThumbnail #scenarioWrapper {
+  transform-origin: 50.0% 50.0%;
+  position: absolute;
+  margin: 0.0 0.0 0.0 0.0;
+  left: 50.0%;
+  top: 50.0%;
+}  
+
+/* Mobile */
+#scenarioWrapper .scenarioDevice { z-index: 1; position: absolute; }
+#scenarioWrapper .scenarioScreenClip { position: absolute; top: 0px; left: 0px; }
+

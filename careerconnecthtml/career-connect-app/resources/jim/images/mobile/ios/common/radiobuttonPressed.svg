@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>radio-ios-on</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NOU" transform="translate(-192.000000, -490.000000)">
+            <g id="IOS" transform="translate(107.000000, 436.149902)">
+                <g id="Elements" transform="translate(9.000000, 53.850098)">
+                    <g id="radio-ios-on" transform="translate(76.000000, 0.000000)">
+                        <path d="M13,24.96 C6.39455229,24.96 1.04,19.6044627 1.04,12.9995228 C1.04,6.39458282 6.39455229,1.04 13,1.04 C19.6054477,1.04 24.96,6.39458282 24.96,12.9995228 C24.96,19.6044627 19.6054477,24.96 13,24.96 Z" stroke="#0075FF" stroke-width="2" fill="#0075FF"></path>
+                        <circle fill="#FFFFFF" cx="13" cy="13" r="5.72"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

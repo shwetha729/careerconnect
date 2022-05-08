@@ -1,0 +1,17 @@
+@charset "utf-8";
+@import url("../../resources/jim/css/function-external-jquery-ui.css");
+@import url("../../resources/jim/css/function-jim-common.css");
+@import url("../../resources/jim/css/function-jim-layout.css");
+@import url("../../resources/jim/css/function-jim-highlight.css");
+@import url("../../resources/jim/css/function-jim-scenarios.css");
+@import url("../../resources/jim/css/function-jim-annotation.css");
+@import url("../../resources/jim/css/function-jim-transition.css");
+@import url("../../resources/jim/css/function-jim-developer.css");
+@import url("../../resources/jim/css/component-jim-navigationtree.css");
+@import url("../../resources/jim/css/component-default-date.css");
+@import url("../../resources/jim/css/mobile/function-jim-mobile.css");
+@import url("../../resources/jim/css/mobile/ios/function-jim-ios-common.css");
+@import url("../../resources/jim/css/mobile/ios/ios15/iphone11pro/function-jim-iphone11pro.css");
+@import url("../../resources/jim/css/mobile/ios/ios15/common/function-jim-ios15.css");
+@import url("../../resources/jim/css/mobile/ios/ios15/common/function-jim-ios15-datetime.css");
+@import url("../../resources/fonts-1652025551030.css");

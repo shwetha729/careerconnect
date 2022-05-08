@@ -1,0 +1,34 @@
+/*** input components ***/
+.canvas.devIOS .checkbox.inputIOS, .canvas.devIOS .radiobutton.inputIOS  { height: 16px; width: 16px;}
+.canvas.devIOS .checkbox.inputIOS.unchecked .backgroundLayer  { background-image:url("../../../images/mobile/ios/common/checkbox.svg"); border: 0px none rgb(0, 0, 0);}
+.canvas.devIOS .checkbox.inputIOS.checked .backgroundLayer  { background-image:url("../../../images/mobile/ios/common/checkboxPressed.svg")}
+.canvas.devIOS .radiobutton.inputIOS.checked .backgroundLayer { background-image:url("../../../images/mobile/ios/common/radiobuttonPressed.svg")}
+.canvas.devIOS .radiobutton.inputIOS.unchecked .backgroundLayer { background-image:url("../../../images/mobile/ios/common/radiobutton.svg")}
+
+body.devIOS .checkboxlist .scroll, body.devIOS .radiobuttonlist .scroll { overflow-x:hidden; }
+
+.canvas.devIOS .radiobuttonlist .scroll { padding-left:0px; margin-left:0px; }
+
+/*** native dropdowns ***/
+.canvas.devIOS .nativedropdown.inputIOS .backgroundLayer {
+  background-color: #E9E9EA;
+  border-width: 0px; border-radius: 15px; border-style: none; 
+  height: calc(100%) !important;
+  width: calc(100%) !important;
+}
+.canvas.devIOS .nativedropdown.inputIOS .content {
+	display:table;
+	vertical-align:inherit;
+    height: calc(100%);
+    width: calc(100%);
+}
+.canvas.devIOS .nativedropdown.inputIOS { height:20px; color: #000000; text-align: left; text-decoration: none; font-family: Helvetica Neue, iOS-Regular; font-style: normal; font-weight: normal; vertical-align: middle;}
+.canvas.devIOS .nativedropdown.inputIOS[disabled="disabled"] { color: #000000; }
+.canvas.devIOS .nativedropdown.inputIOS.pressed .backgroundLayer { border-color: #102b7f; }
+.canvas.devIOS .nativedropdown.inputIOS .icon { position:relative; top:0px; width: 20px; height: 20px; float: right; background-repeat: no-repeat; background-position: 50% 50%; padding-right: 0px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;
+  background-image: url("../../../images/mobile/ios/common/ios_dropdown_icon.svg"); background-size:8px 9px;
+}
+.canvas.devIOS .nativedropdown.inputIOS[readonly="readonly"] {opacity:0.5;}
+
+.canvas.devIOS .nativedropdown.inputIOS .dropdown-options { opacity:0.0001; filter: alpha(opacity=0); }
+.canvas.devIOS .nativedropdown.inputIOS .value { width:inherit; visibility:visible; padding-left:7px; font-size:12px; color:#007aff;overflow: hidden;width: calc(100% - 20px);}

@@ -1,0 +1,12 @@
+/* start iPhone 11 Pro css values*/
+body.iphone11pro #jim-mobile { position:relative; top:0px; left:0px; width:533px; height:937px; margin:0 auto; }
+body.iphone11pro #jim-case { background-image: url("../../../../../images/mobile/ios/ios15/iphone11pro@2x.png"); height:937px; width:533px; background-size:100% auto; z-index:100; /*must be over keyboards and comment bubbles*/ position:absolute; pointer-events:none; }
+body.iphone11pro #jim-mobile #simulation { position: relative; height: 100%; overflow:hidden; }
+body.iphone11pro #jim-mobile .ui-page { overflow:hidden; }
+
+/* orientation values */
+body.iphone11pro #jim-mobile.landscape { height:533px; width:937px; }
+body.iphone11pro #jim-case.portrait { transform:rotate(0deg); transform-origin:auto; }
+body.iphone11pro #jim-case.landscape { transform:rotate(-90deg); transform-origin:50% 29% 0; }
+body.iphone11pro #jim-container.portrait { position: absolute; top: 67px; left: 76px; width: 375px; height: 812px; }
+body.iphone11pro #jim-container.landscape { position: absolute; top: 87px; left: 61.5px; width: 812px; height: 375px; }

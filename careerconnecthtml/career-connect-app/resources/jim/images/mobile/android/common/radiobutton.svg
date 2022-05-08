@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>radio-android-off</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NOU" transform="translate(-574.000000, -186.000000)" fill="#757575">
+            <g id="Elements" transform="translate(460.000000, 185.889648)">
+                <g id="radio-android-off" transform="translate(114.000000, 0.026089)">
+                    <path d="M13,0 C20.1797017,0 26,5.82029825 26,13 C26,20.1797017 20.1797017,26 13,26 C5.82029825,26 0,20.1797017 0,13 C0,5.82029825 5.82029825,0 13,0 Z M13,2.08 C6.96905053,2.08 2.08,6.96905053 2.08,13 C2.08,19.0309495 6.96905053,23.92 13,23.92 C19.0309495,23.92 23.92,19.0309495 23.92,13 C23.92,6.96905053 19.0309495,2.08 13,2.08 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

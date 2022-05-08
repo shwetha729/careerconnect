@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>checkbutton-ios-on</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NOU" transform="translate(-116.000000, -490.000000)">
+            <g id="IOS" transform="translate(107.000000, 436.149902)">
+                <g id="Group" transform="translate(9.000000, 53.850098)">
+                    <rect id="checkbutton-ios-on" stroke="#0075FF" stroke-width="4.65" fill="#0075FF" x="2.325" y="2.325" width="21.35" height="21.35" rx="5.5"></rect>
+                    <path d="M21.0033439,7.83688702 L11.7385998,20.5754372 C11.2205035,21.0738341 10.443359,21.0738341 9.92526275,20.5754372 L4.99665607,15.3086676 C4.47855978,14.8102707 4.47855978,14.0626753 4.99665607,13.5642784 C5.51475236,13.0658815 6.2918968,13.0658815 6.8099931,13.5642784 L10.9614553,17.8342543 L19.1900069,5.84329941 C19.7081032,5.34490251 20.4852476,5.34490251 21.0033439,5.84329941 C21.5214402,6.34169632 21.5214402,7.33849012 21.0033439,7.83688702 Z" id="checkbox_arrow" stroke="#FFFFFF" stroke-width="0.5" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

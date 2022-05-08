@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'iOS-Light';
+    src: url('../../common/iOS-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'iOS-Regular';
+    src: url('../../common/iOS-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'iOS-Medium';
+    src: url('../../common/iOS-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'iOS-Bold';
+    src: url('../../common/iOS-Bold.ttf') format('truetype');
+}
+
+/* keyboard values */
+#jim-ios15-kb { position: absolute; bottom: 0px; left: 0px; font-family:"Helvetica Neue",'iOS-Light'; font-weight:300;  background-color:#d1d4da; z-index:99; display:none; }
+#jim-ios15-kb .row > div > div,
+#jim-ios15-kb .row > div > span { pointer-events:none; }
+
+.iphone-device #jim-ios15-kb { font-size:26px; }
+.iphone-device #jim-ios15-kb .row { height: 45px; margin-top: 10px; margin-left: -5px; margin-right: -3px; display: flex; flex-direction: row; }
+.iphone-device #jim-ios15-kb .row > div { text-align: center; vertical-align: top; display: table-cell; background-color: white; border-radius: 4px; filter: drop-shadow(0px 1px 1px #ababab); }
+.iphone-device #jim-ios15-kb .row > div.p { margin-right: 0px; }
+.iphone-device #jim-ios15-kb .row > div.backspace { margin-right:0px; background-color: #abb1bc; }
+.iphone-device #jim-ios15-kb .row:nth-child(3) > div:first-child { width: 11%; margin-right: 1.7%; background-color: #abb1bc; font-size: 16px; }
+.iphone-device #jim-ios15-kb .row:nth-child(4) > div:first-child { width: 22%; background-color: #abb1bc; }
+.iphone-device.iphone4 #jim-ios15-kb .row:nth-child(5),
+.iphone-device.iphone5 #jim-ios15-kb .row:nth-child(5),
+.iphone-device.iphone8 #jim-ios15-kb .row:nth-child(5),
+.iphone-device.iphone8plus #jim-ios15-kb .row:nth-child(5) { display:none; }
+.iphone-device #jim-ios15-kb .row > div.return { margin-right: 0px; background-color: #1168ff; color: white; }
+.iphone-device #jim-ios15-kb .row:nth-child(4) { margin-top: 9.5px; font-size: 16px; }
+.iphone-device #jim-ios15-kb .row:nth-child(4) > div { height: 43px; }
+.iphone-device #jim-ios15-kb :is(#letters, #email, #url) .row:nth-child(2) > div:first-child { margin-left: 6.7%; }
+.iphone-device #jim-ios15-kb :not(#letters, #email, #url) .row:nth-child(3) > :first-child ~ div:not(:last-child) { width: 12.56%; margin-left: 1.3%; }
+.iphone-device #jim-ios15-kb .shift span { display: block; background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-size: 250px 150px; background-position: -104px 5px; height: 32px; width: 26px; margin: 6px auto 0px auto; }
+.iphone-device #jim-ios15-kb .row > div.shift.caps, 
+.iphone-device #jim-ios15-kb .row > div.shift.capsLock { background-color: white; }
+.iphone-device #jim-ios15-kb .shift.caps span { background-position: -55px 5px; }
+.iphone-device #jim-ios15-kb .shift.capsLock span { background-position: -79px 5px; }
+.iphone-device #jim-ios15-kb .backspace span { display: block; background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-size: 250px 150px; background-position: 1px 5px; height: 32px; width: 28px; margin: 6px auto 0px auto; }
+.iphone-device #jim-ios15-kb .row > div.backspace.pressed { background-color: white; }
+.iphone-device #jim-ios15-kb .backspace.pressed span { background-position: -26px 5px; }
+.iphone-device #jim-ios15-kb .return.pressed { background-color: white; color: black; }
+.iphone-device #jim-ios15-kb .space.pressed { background-color: #abb1bc; }
+.iphone-device #jim-ios15-kb .row:nth-child(5) div.emote { display: inline-block; margin-left:29px; background-color: transparent; filter: none; background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-size: 250px 150px; background-position: -171px 3px; height: 30px; width: 30px; pointer-events:none; }
+.iphone-device #jim-ios15-kb .row:nth-child(5) div.micro { display: inline-block; margin-right:29px; float: right; clear: both; background-color: transparent; filter: none; background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-size: 250px 150px; background-position: -146px 3px; width: 25px; height: 32px; pointer-events:none; }
+
+
+.iphone-device .portrait #jim-ios15-kb { width: 100%; height: 291px; }
+.iphone-device.iphone4 .portrait #jim-ios15-kb,
+.iphone-device.iphone5 .portrait #jim-ios15-kb,
+.iphone-device.iphone8 .portrait #jim-ios15-kb,
+.iphone-device.iphone8plus .portrait #jim-ios15-kb { height: 218px; }
+.iphone-device .portrait #jim-ios15-kb.caps .row .value { font-size: 23px; margin-top: 8px; }
+.iphone-device .portrait #jim-ios15-kb .row:first-child { margin-top: 6px; }
+.iphone-device .portrait #jim-ios15-kb .row > div { width: 7.9%; height: 43px; margin-left: 1.94%; }
+.iphone-device .portrait #jim-ios15-kb .row > div > div { margin-top: 5px; }
+.iphone-device .portrait #jim-ios15-kb .row:nth-child(3) > div:first-child > div,
+.iphone-device .portrait #jim-ios15-kb .row:nth-child(4) > div > div { margin-top:12px; }
+.iphone-device .portrait #jim-ios15-kb .row:nth-child(5) { display: block; margin-top:15px; }
+.iphone-device.iphone4 .portrait #jim-ios15-kb .row:nth-child(5),
+.iphone-device.iphone5 .portrait #jim-ios15-kb .row:nth-child(5),
+.iphone-device.iphone8 .portrait #jim-ios15-kb .row:nth-child(5),
+.iphone-device.iphone8plus .portrait #jim-ios15-kb .row:nth-child(5) { display:none; }
+.iphone-device .portrait #jim-ios15-kb .row > div.backspace { width: 11.1%; margin-left: 3.8%; }
+.iphone-device .portrait #jim-ios15-kb .row > div.space { width: 48.7%; }
+.iphone-device .portrait #jim-ios15-kb .row > div.return { width: 22%; }
+.iphone-device .portrait #jim-ios15-kb #email .row > div.space { width: 28.8%; }
+.iphone-device .portrait #jim-ios15-kb #url .row:nth-child(4) div:nth-child(2),
+.iphone-device .portrait #jim-ios15-kb #url .row:nth-child(4) div:nth-child(3),
+.iphone-device .portrait #jim-ios15-kb #url .row:nth-child(4) div:nth-child(4) { width: 14.88%; }
+.iphone-device .portrait #jim-ios15-kb :is(#numbers, #signs) .row > div.backspace { margin-left: 3.4%; }
+
+.iphone-device .portrait #jim-ios15-kb .divBubble .keyBubble { position: absolute; text-align: center; top: 7px; font-size: 40px; width: 100%; display: block; }
+.iphone-device .portrait #jim-ios15-kb .divBubble .keyBubble-back { height: 110px; display:flex; }
+.iphone-device .portrait #jim-ios15-kb .divBubble .keyBubble-back .bubble1 { width: 21px; background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-position: 0px -30px; background-size: 250px 150px; }
+.iphone-device .portrait #jim-ios15-kb .divBubble .keyBubble-back .bubble2 { width: calc(100% - 42px); background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-position: -26px -30px; background-size: 250px 150px; }
+.iphone-device .portrait #jim-ios15-kb .divBubble .keyBubble-back .bubble3 { width: 21px; background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-position: 0px -30px; background-size: 250px 150px; transform:scaleX(-1); }
+.iphone-device .portrait #jim-ios15-kb .divBubble .keyBubble-back .bubble4 { width: 10px; background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-position: -101px -30px; background-size: 250px 150px; }
+.iphone-device .portrait #jim-ios15-kb .divBubble .keyBubble-back .bubble5 { width: 32px; background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-position: -116px -30px; background-size: 250px 150px; }
+
+.iphone-device .landscape #jim-ios15-kb.caps .row .value { font-size: 23px; margin-top: 3px; }
+.iphone-device .landscape #jim-ios15-kb { padding-left: 8.9%; padding-right: 8.9%; width: 100%; height: 183px; box-sizing: border-box; font-size: 23px; }
+.iphone-device.iphone4 .landscape #jim-ios15-kb,
+.iphone-device.iphone5 .landscape #jim-ios15-kb,
+.iphone-device.iphone8 .landscape #jim-ios15-kb,
+.iphone-device.iphone8plus .landscape #jim-ios15-kb { padding-left: 2.9%; padding-right: 2.9%; height: 173px; }
+.iphone-device .landscape #jim-ios15-kb > * { position: relative; }
+.iphone-device .landscape #jim-ios15-kb .row { height: 33px; margin-top:7px; }
+.iphone-device .landscape #jim-ios15-kb .row > div { height:33px; width: 8.9%; margin-left: 1%; }
+.iphone-device .landscape #jim-ios15-kb .row > div > div { margin-top: 2px; }
+.iphone-device .landscape #jim-ios15-kb .row:nth-child(4) > div > div { margin-top: 6px; }
+.iphone-device .landscape #jim-ios15-kb .row:nth-child(3) > div:first-child { width: 12%; margin-right: 1.9%; }
+.iphone-device .landscape #jim-ios15-kb .row:nth-child(3) > div:first-child div { margin-top: 7px; }
+.iphone-device .landscape #jim-ios15-kb .row:nth-child(4) > div:first-child { width: 18.8%; }
+.iphone-device .landscape #jim-ios15-kb .row > div.backspace { width: 12%; margin-left: 2.8%; }
+.iphone-device .landscape #jim-ios15-kb .row > div.space { width: 58.5%; }
+.iphone-device .landscape #jim-ios15-kb .row > div.return { width: 18.8%; }
+.iphone-device .landscape #jim-ios15-kb :is(#letters, #email, #url) .row:nth-child(2) > div:first-child { margin-left: 6%; }
+.iphone-device .landscape #jim-ios15-kb .shift span,
+.iphone-device .landscape #jim-ios15-kb .backspace span { margin: 1px auto 0px auto; }
+.iphone-device .landscape #jim-ios15-kb .row:nth-child(5) { position: absolute; width: 100%; }
+.iphone-device .landscape #jim-ios15-kb .row:nth-child(5) div.emote { position: absolute; top: -40px; left: -43px;  margin-left:0px; }
+.iphone-device .landscape #jim-ios15-kb .row:nth-child(5) div.micro { position: absolute; top: -40px; left: 103.5%;  margin-left:0px; }
+.iphone-device .landscape #jim-ios15-kb #email .row > div.space { width: 38.7%; }
+.iphone-device .landscape #jim-ios15-kb #url .row:nth-child(4) div:nth-child(2),
+.iphone-device .landscape #jim-ios15-kb #url .row:nth-child(4) div:nth-child(3),
+.iphone-device .landscape #jim-ios15-kb #url .row:nth-child(4) div:nth-child(4) { width: 18.8%; }
+
+.iphone-device .landscape #jim-ios15-kb .divBubble .keyBubble { position: absolute; text-align: center; top: 7px; font-size: 40px; width: 100%; display: block; }
+.iphone-device .landscape #jim-ios15-kb .divBubble .keyBubble-back { height: 110px; display:flex; }
+.iphone-device .landscape #jim-ios15-kb .divBubble .keyBubble-back .bubble1 { width: 27px; background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-position: -146px -30px; background-size: 250px 150px; }
+.iphone-device .landscape #jim-ios15-kb .divBubble .keyBubble-back .bubble2 { width: calc(100% - 54px); background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-position: -26px -30px; background-size: 250px 150px; }
+.iphone-device .landscape #jim-ios15-kb .divBubble .keyBubble-back .bubble3 { width: 27px; background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-position: -146px -30px; background-size: 250px 150px; transform:scaleX(-1); }
+.iphone-device .landscape #jim-ios15-kb .divBubble .keyBubble-back .bubble4 { width: 10px; background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-position: -176px -30px; background-size: 250px 150px; }
+.iphone-device .landscape #jim-ios15-kb .divBubble .keyBubble-back .bubble5 { width: 44px; background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-position: -191px -30px; background-size: 250px 150px; }
+
+
+.ipad-device #jim-ios15-kb { font-size:26px; }
+.ipad-device #jim-ios15-kb .row { height: 57.5px; margin-top: 8px; margin-left: -5px; margin-right: -3px; display: flex; flex-direction: row; }
+.ipad-device #jim-ios15-kb .row:first-child { margin-top: 14px; }
+.ipad-device #jim-ios15-kb .row > div { text-align: center; vertical-align: top; display: table-cell; background-color: white; border-radius: 5px; filter: drop-shadow(0px 1px 1px #ababab); }
+.ipad-device #jim-ios15-kb .row:nth-child(1) > div { width: 7.8%; margin-left: 1%; }
+.ipad-device #jim-ios15-kb .row:nth-child(2) > div { width: 7%; margin-left: 1.1%; }
+.ipad-device #jim-ios15-kb .row:nth-child(3) > div { width: 7%; margin-left:1%; }
+.ipad-device #jim-ios15-kb .row > div.p { margin-right: 0px; }
+.ipad-device #jim-ios15-kb .row > div.return { width: 12.8%; margin-right: 0px; }
+.ipad-device #jim-ios15-kb .row:nth-child(4) { margin-top: 9.5px; }
+.ipad-device #jim-ios15-kb .row:nth-child(4) > div { width: 7%; }
+.ipad-device #jim-ios15-kb .row:nth-child(4) > div:not(:first-child) { margin-left: 1.25%; }
+.ipad-device #jim-ios15-kb .row > div:first-child,
+.ipad-device #jim-ios15-kb .row > div:last-child { font-size: 16px; }
+
+.ipad-device .portrait #jim-ios15-kb { width: 100%; height: 291px; }
+.ipad-device .portrait #jim-ios15-kb .row:not(:first-child) { height: 55px; }
+.ipad-device .portrait #jim-ios15-kb .row > div:first-child { margin-left:1.6%;}
+.ipad-device .portrait #jim-ios15-kb .row:nth-child(2) > div:first-child { width: 10.3%; }
+.ipad-device .portrait #jim-ios15-kb .row > div.tab { width: 7.8%; }
+.ipad-device .portrait #jim-ios15-kb .row > div.space { width: 47.7% !important; }
+.ipad-device .portrait #jim-ios15-kb .row:nth-child(3) > div:first-child { width: 13.4%; }
+.ipad-device .portrait #jim-ios15-kb .row:nth-child(3) > div:last-child { width: 10.7%; }
+.ipad-device .portrait #jim-ios15-kb .row > div.backspace { width: 7.8%; margin-right:1.3%; }
+.ipad-device .portrait #jim-ios15-kb .row:nth-child(4) > div:nth-child(5) { width: 11%; }
+.ipad-device .portrait #jim-ios15-kb .row > div.exit { width: 11.2%; }
+
+.ipad-device .landscape #jim-ios15-kb { width: 100%; height: 373px; }
+.ipad-device .landscape #jim-ios15-kb .row { height: 74.5px; margin-top: 11px; }
+.ipad-device .landscape #jim-ios15-kb .row:not(:first-child) { height: 75px; }
+.ipad-device .landscape #jim-ios15-kb .row > div:first-child { margin-left:19px;}
+.ipad-device .landscape #jim-ios15-kb .row:nth-child(1) > div { width: 7%; }
+.ipad-device .landscape #jim-ios15-kb .row > div > div:only-of-type { margin-top: 22px; }
+.ipad-device .landscape #jim-ios15-kb .row > div.tab { width: 8.5%; }
+.ipad-device .landscape #jim-ios15-kb .row > div.backspace { width: 8.5%; margin-right: 18px; }
+.ipad-device .landscape #jim-ios15-kb .row:nth-child(2) > div:first-child { width: 11.5%; }
+.ipad-device .landscape #jim-ios15-kb .row > div.return { width: 13.8%; margin-right: 18px; }
+.ipad-device .landscape #jim-ios15-kb .row:nth-child(3) > div:first-child { width: 15%; }
+.ipad-device .landscape #jim-ios15-kb .row:nth-child(3) > div:last-child { width: 10%; margin-right: 18px; }
+.ipad-device .landscape #jim-ios15-kb .row:nth-child(4) > div { width: 6.8%; }
+.ipad-device .landscape #jim-ios15-kb .row > div.space { width: 50.5% !important; }
+.ipad-device .landscape #jim-ios15-kb .row:nth-child(4) > div:nth-child(5) { width:10%; }
+.ipad-device .landscape #jim-ios15-kb .row > div.exit { width:10%; margin-right: 18px; }
+
+.ipad-device #jim-ios15-kb div.emote span { display: block; background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-size: 250px 150px; background-position: -169px 5px; height: 32px; width: 30px; margin-left: 2px; margin-top: 19px; }
+.ipad-device #jim-ios15-kb div.micro span { display: block; background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-size: 250px 150px; background-position: -145px 4px; width: 25px; height: 32px; margin-left: 2px; margin-top: 19px; }
+.ipad-device #jim-ios15-kb div.exit span { display: block; background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-size: 250px 150px; background-position: -216px 5px; width: 35px; height: 32px; margin-left: 60%; margin-top: 19px; }
+.ipad-device .landscape #jim-ios15-kb div.emote span { margin-left: 6px; margin-top: 37px; }
+.ipad-device .landscape #jim-ios15-kb div.micro span { margin-left: 6px; margin-top: 37px; }
+.ipad-device .landscape #jim-ios15-kb div.exit span { margin-left: 65%; margin-top: 37px; }
+
+.ipad-device #jim-ios15-kb .row > div > div:only-of-type { margin-top: 14px; }
+.ipad-device .portrait #jim-ios15-kb .superValue { font-size: 14px; color: #bfbfbf; padding-top: 4px; }
+.ipad-device .portrait #jim-ios15-kb .value { font-size: 21px; padding-top: 5px; }
+.ipad-device .portrait #jim-ios15-kb .row > div:first-child > div:only-of-type,
+.ipad-device .portrait #jim-ios15-kb .row:nth-child(4) > div:nth-child(2) > div:only-of-type { margin-top: 34px; text-align: initial; margin-left: 8px; font-size: 16px; }
+.ipad-device .portrait #jim-ios15-kb .row > div:last-child > div:only-of-type,
+.ipad-device .portrait #jim-ios15-kb .row:nth-child(4) > div:nth-child(5) > div:only-of-type { margin-top: 34px; text-align: end; margin-right: 4px; margin-left: 0px; font-size: 16px; }
+
+.ipad-device .landscape #jim-ios15-kb .value { font-size: 21px; padding-top: 6px; }
+.ipad-device .landscape #jim-ios15-kb .superValue { font-size: 20px; color: #bfbfbf; padding-top: 6px; }
+.ipad-device .landscape #jim-ios15-kb .row > div:first-child > div:only-of-type,
+.ipad-device .landscape #jim-ios15-kb .row:nth-child(4) > div:nth-child(2) > div:only-of-type { margin-top: 44px; text-align: initial; margin-left: 10px; font-size: 20px; }
+.ipad-device .landscape #jim-ios15-kb .row > div:last-child > div:only-of-type,
+.ipad-device .landscape #jim-ios15-kb .row:nth-child(4) > div:nth-child(5) > div:only-of-type { margin-top: 44px; text-align: end; margin-right: 9px; margin-left: 0px; font-size: 20px; }
+
+
+#jim-ios15-kb .row > div.pressed { background-color: #abb1bc; }
+.ipad-device #jim-ios15-kb .row > div.tab,
+.ipad-device #jim-ios15-kb .row > div.undo,
+.ipad-device #jim-ios15-kb .row > div.redo,
+.ipad-device #jim-ios15-kb .row > div.backspace,
+.ipad-device #jim-ios15-kb .row > div.capsLock,
+.ipad-device #jim-ios15-kb .row > div.return,
+.ipad-device #jim-ios15-kb .row > div.shiftLeft,
+.ipad-device #jim-ios15-kb .row > div.shiftRight,
+.ipad-device #jim-ios15-kb .row > div.emote,
+.ipad-device #jim-ios15-kb .row > div.lettersLeft,
+.ipad-device #jim-ios15-kb .row > div.lettersRight,
+.ipad-device #jim-ios15-kb .row > div.numbersLeft,
+.ipad-device #jim-ios15-kb .row > div.numbersRight,
+.ipad-device #jim-ios15-kb .row > div.signsLeft,
+.ipad-device #jim-ios15-kb .row > div.signsRight,
+.ipad-device #jim-ios15-kb .row > div.micro,
+.ipad-device #jim-ios15-kb .row > div.exit {
+	background-color: #abb1bc;
+}
+.ipad-device #jim-ios15-kb .row > div.tab.pressed,
+.ipad-device #jim-ios15-kb .row > div.backspace.pressed,
+.ipad-device #jim-ios15-kb .row > div.capsLock.pressed,
+.ipad-device #jim-ios15-kb .row > div.return.pressed,
+.ipad-device #jim-ios15-kb .row > div.shiftLeft.pressed,
+.ipad-device #jim-ios15-kb .row > div.shiftRight.pressed,
+.ipad-device #jim-ios15-kb .row > div.emote.pressed,
+.ipad-device #jim-ios15-kb .row > div.numbersLeft.pressed,
+.ipad-device #jim-ios15-kb .row > div.numbersRight.pressed,
+.ipad-device #jim-ios15-kb .row > div.micro.pressed,
+.ipad-device #jim-ios15-kb .row > div.exit.pressed {
+	background-color: white;
+}
+
+
+/* dropdown values */
+#jim-ios15-dd { position: absolute; width: 250px; z-index:99; display:none; position: absolute; background-size: 100% auto;background-repeat:no-repeat; border-radius: 15px; box-shadow: 2px 2px 100px 10px rgb(0 0 0 / 30%);}
+#jim-ios15-dd .dd_options {top:0px; width: 100%; height:100%; vertical-align:top;}
+
+#jim-ios15-dd .dd_options .line_options:not(:last-child) {border-bottom:1px solid #DDDDDD;}
+#jim-ios15-dd #dd_content {overflow:hidden;background-color: #f5f6f5;width:100%;height:100%;border-radius:15px;}
+#jim-ios15-dd .dd_options .line_options{min-height: 40px;display:table;width:100%;padding-top:5px;padding-bottom:5px;}
+#jim-ios15-dd .dd_options .line_options.selected { background-color:transparent !important; position:relative; }
+#jim-ios15-dd .dd_options .line_options.pressed { background-color:#DDDDDD; }
+#jim-ios15-dd .dd_options .options {color: #000000; font-size:18px; font-family:"Helvetica Neue", "iOS-Regular";display:table-cell;vertical-align:middle;padding-left:30px; padding-right:10px;word-wrap: break-word;word-break: break-all;}
+#jim-ios15-dd .dd_options .tick { top:50%; transform:translateY(-50%); background-image:url('../../../../../css/mobile/ios/ios15/common/ios15-sprite@2x.png'); background-repeat:no-repeat; width: 15px; height: 21px; overflow:visible; position: absolute; left:5px;background-size: 250px 160px;background-position: -201px -3px;}
+
